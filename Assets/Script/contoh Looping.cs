@@ -63,6 +63,8 @@ public class contohselanjutnya : MonoBehaviour
         // Debug.Log("Model Mobil: " + car.model);
         // Debug.Log("Tahun Mobil: " + car.tahun);
 
+        
+
     }
 
     // Update is called once per frame
