@@ -1,3 +1,4 @@
+//KMG_Creater
 using UnityEngine;
 
 public class KMG_Create : MonoBehaviour
