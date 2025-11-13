@@ -4,8 +4,11 @@ using UnityEngine;
 public class Interaksi12B : MonoBehaviour
 {
     //dekalarasi variabel
-    public SquareMove12 squareMove12;
+    public SquareMoveMove squareMove12;
     public int skor;
+    public int nyawa;
+    public TMP_Text textskor;
+    public TMP_Text textnyawa;
     
     void Start()
     {
@@ -27,7 +30,7 @@ public class Interaksi12B : MonoBehaviour
     public void GerakKiri()
     {
         // Mengatur arah gerak pada script SquareMove12 menjadi Kiri.
-        squareMove12.arah = ArahGerakB.Kiri;
+        squareMove12.arahGerakB = ArahGerakB.Kiri;
     }
     // Fungsi ini dipanggil ketika tombol "Kanan" ditekan.
     // Mengubah arah gerak objek ke arah kanan.

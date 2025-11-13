@@ -62,12 +62,27 @@ public class SquareMoveMove : MonoBehaviour
             {
                 arahGerakB = ArahGerakB.Atas;
             }
+
+            TambahSkor();
+            
+        }else if (collision.gameObject.CompareTag("Circle"))
+        {
+            Debug.Log("Bertabrakan dengan Circle");
+            NyawaHilang();
         }
+
     } 
     public void TambahSkor()
     {
-        interaksi12B.Score.text = "Skor:" + interaksi12B.skor.ToString();
+        interaksi12B.skor += 1;
+        interaksi12B.textskor.text = "Skor:" + interaksi12B.skor.ToString();
         //mengubah Score  di script Interaksi12 menjadi "Skor:" diikuti dengan nilai skor
+    }
+    public void NyawaHilang()
+    {
+        //fungsi untuk mengurangi nyawa atau health
+        interaksi12B.nyawa -= 1;
+        interaksi12B.textnyawa.text = "Nyawa:" + interaksi12B.nyawa.ToString();
     }
 }
 public enum ArahGerakB
