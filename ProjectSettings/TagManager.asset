@@ -8,6 +8,7 @@ TagManager:
   - Bola
   - Dinding
   - Circle
+  - Lantai
   layers:
   - Default
   - TransparentFX
